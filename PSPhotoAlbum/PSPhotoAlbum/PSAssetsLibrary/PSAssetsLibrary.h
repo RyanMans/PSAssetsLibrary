@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param albumName    相簿名称
  *  @param failureBlock 
  */
-- (void)ps_AddAssetsGroupAlbumWithName:(NSString*)albumName failureBlock:(void (^)(NSString *error))failureBlock;
+- (void)ps_AddAssetsGroupAlbumWithName:(NSString*)albumName failureBlock:(void (^)(NSString * _Nullable error))failureBlock;
 
 
 /**
@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param completionBlock
  *  @param failureBlock
  */
-- (void)ps_SaveToAlbumWithMetadata:(nullable NSDictionary *)metadata  imageData:(NSData *)imageData  customAlbumName:(NSString *)customAlbumName completionBlock:(void (^)(void))completionBlock failureBlock:(void (^)(NSString *error))failureBlock;
+- (void)ps_SaveToAlbumWithMetadata:(nullable NSDictionary *)metadata  imageData:(NSData *)imageData  customAlbumName:(NSString *)customAlbumName completionBlock:(void (^)(void))completionBlock failureBlock:(void (^)(NSString * _Nullable error))failureBlock;
 
 @end
 NS_ASSUME_NONNULL_END

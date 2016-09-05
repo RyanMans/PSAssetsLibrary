@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153F38721D6EBE8600F5DB3F /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153F38711D6EBE8600F5DB3F /* Photos.framework */; };
+		153F387C1D6EC18B00F5DB3F /* PSAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 153F38781D6EC18B00F5DB3F /* PSAssetsLibrary.m */; };
+		153F387D1D6EC18B00F5DB3F /* PSPhotoKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 153F387B1D6EC18B00F5DB3F /* PSPhotoKit.m */; };
 		15B8A0A91D6D8409009C4537 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B8A0A81D6D8409009C4537 /* main.m */; };
 		15B8A0AC1D6D8409009C4537 /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B8A0AB1D6D8409009C4537 /* PSAppDelegate.m */; };
 		15B8A0AF1D6D8409009C4537 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B8A0AE1D6D8409009C4537 /* ViewController.m */; };
@@ -18,7 +21,6 @@
 		15B8A0DC1D6D858D009C4537 /* PSPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B8A0DB1D6D858D009C4537 /* PSPictureViewController.m */; };
 		15B8A0DE1D6D949B009C4537 /* qzl.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B8A0DD1D6D949B009C4537 /* qzl.png */; };
 		15B8A0E01D6D9810009C4537 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B8A0DF1D6D9810009C4537 /* AssetsLibrary.framework */; };
-		15F4F6481D6D9F7E00A7E787 /* PSAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F4F6471D6D9F7E00A7E787 /* PSAssetsLibrary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153F38711D6EBE8600F5DB3F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		153F38771D6EC18B00F5DB3F /* PSAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAssetsLibrary.h; sourceTree = "<group>"; };
+		153F38781D6EC18B00F5DB3F /* PSAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAssetsLibrary.m; sourceTree = "<group>"; };
+		153F387A1D6EC18B00F5DB3F /* PSPhotoKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPhotoKit.h; sourceTree = "<group>"; };
+		153F387B1D6EC18B00F5DB3F /* PSPhotoKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPhotoKit.m; sourceTree = "<group>"; };
 		15B8A0A41D6D8409009C4537 /* PSPhotoAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSPhotoAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B8A0A81D6D8409009C4537 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15B8A0AA1D6D8409009C4537 /* PSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAppDelegate.h; sourceTree = "<group>"; };
@@ -59,8 +66,6 @@
 		15B8A0DB1D6D858D009C4537 /* PSPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPictureViewController.m; sourceTree = "<group>"; };
 		15B8A0DD1D6D949B009C4537 /* qzl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qzl.png; sourceTree = "<group>"; };
 		15B8A0DF1D6D9810009C4537 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		15F4F6461D6D9F7E00A7E787 /* PSAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAssetsLibrary.h; sourceTree = "<group>"; };
-		15F4F6471D6D9F7E00A7E787 /* PSAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAssetsLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153F38721D6EBE8600F5DB3F /* Photos.framework in Frameworks */,
 				15B8A0E01D6D9810009C4537 /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,9 +95,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		153F38761D6EC18B00F5DB3F /* PSAssetsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				153F38771D6EC18B00F5DB3F /* PSAssetsLibrary.h */,
+				153F38781D6EC18B00F5DB3F /* PSAssetsLibrary.m */,
+			);
+			path = PSAssetsLibrary;
+			sourceTree = "<group>";
+		};
+		153F38791D6EC18B00F5DB3F /* PSPhotoKit */ = {
+			isa = PBXGroup;
+			children = (
+				153F387A1D6EC18B00F5DB3F /* PSPhotoKit.h */,
+				153F387B1D6EC18B00F5DB3F /* PSPhotoKit.m */,
+			);
+			path = PSPhotoKit;
+			sourceTree = "<group>";
+		};
 		15B8A09B1D6D8409009C4537 = {
 			isa = PBXGroup;
 			children = (
+				153F38711D6EBE8600F5DB3F /* Photos.framework */,
 				15B8A0DF1D6D9810009C4537 /* AssetsLibrary.framework */,
 				15B8A0A61D6D8409009C4537 /* PSPhotoAlbum */,
 				15B8A0C01D6D840A009C4537 /* PSPhotoAlbumTests */,
@@ -113,11 +138,11 @@
 		15B8A0A61D6D8409009C4537 /* PSPhotoAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				153F38761D6EC18B00F5DB3F /* PSAssetsLibrary */,
+				153F38791D6EC18B00F5DB3F /* PSPhotoKit */,
 				15B8A0DD1D6D949B009C4537 /* qzl.png */,
 				15B8A0AA1D6D8409009C4537 /* PSAppDelegate.h */,
 				15B8A0AB1D6D8409009C4537 /* PSAppDelegate.m */,
-				15F4F6461D6D9F7E00A7E787 /* PSAssetsLibrary.h */,
-				15F4F6471D6D9F7E00A7E787 /* PSAssetsLibrary.m */,
 				15B8A0DA1D6D858D009C4537 /* PSPictureViewController.h */,
 				15B8A0DB1D6D858D009C4537 /* PSPictureViewController.m */,
 				15B8A0AD1D6D8409009C4537 /* ViewController.h */,
@@ -289,9 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153F387C1D6EC18B00F5DB3F /* PSAssetsLibrary.m in Sources */,
 				15B8A0AF1D6D8409009C4537 /* ViewController.m in Sources */,
 				15B8A0AC1D6D8409009C4537 /* PSAppDelegate.m in Sources */,
-				15F4F6481D6D9F7E00A7E787 /* PSAssetsLibrary.m in Sources */,
+				153F387D1D6EC18B00F5DB3F /* PSPhotoKit.m in Sources */,
 				15B8A0DC1D6D858D009C4537 /* PSPictureViewController.m in Sources */,
 				15B8A0A91D6D8409009C4537 /* main.m in Sources */,
 			);

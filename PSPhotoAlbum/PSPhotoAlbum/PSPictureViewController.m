@@ -8,7 +8,7 @@
 
 #import "PSPictureViewController.h"
 #import "PSAssetsLibrary.h"
-
+#import "PSPhotoKit.h"
 @interface PSPictureViewController ()
 {
     UIImageView * _pictureView;
@@ -36,6 +36,12 @@
     _pictureView.image = [UIImage imageNamed:@"qzl"];
     
     [self.view addSubview:_pictureView];
+    
+    
+    [[PSPhotoKit shareInstance] ps_Add];
+    
+    return;
+    
     
     [PSAssetsLibraryInstance ps_AddAssetsGroupAlbumWithName:@"PSAssetsLibrary" failureBlock:^(NSString * _Nonnull error) {
         
